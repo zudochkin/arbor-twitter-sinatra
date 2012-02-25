@@ -1,0 +1,6 @@
+<% @users.each do |u| %>
+	<h5><%= u.name %> - <%= u.screen_name %></h5>
+	<img src="<%= u.profile_image_url %>">
+	<p><%= u.created_at %></p>
+	<hr>
+<% end %>
